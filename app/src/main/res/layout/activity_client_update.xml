@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.client.update.ClientUpdateActivity">
+
+    <include layout="@layout/action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imagenCircularPerfilUpdate"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/user_icon"
+                    app:civ_border_color="@color/gray"
+                    app:civ_border_width="5dp"
+                    app:civ_circle_background_color="@color/gray"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="70dp"
+                    />
+
+
+                <EditText
+                    android:id="@+id/nombreFormularioUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/fondoedittext"
+                    android:hint="Nombre"
+                    android:paddingLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/apellidoFormularioUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/fondoedittext"
+                    android:hint="Apellido"
+                    android:paddingLeft="20dp" />
+
+
+
+                <EditText
+                    android:id="@+id/TelefonoFormularioUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/fondoedittext"
+                    android:hint="Telefono"
+                    android:inputType="phone"
+                    android:paddingLeft="20dp" />
+
+
+                <Button
+                    android:id="@+id/buttonRegistroUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/botonredondeado"
+                    android:text="Actualizar Datos" />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
